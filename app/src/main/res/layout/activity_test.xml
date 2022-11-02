@@ -24,7 +24,7 @@
     <EditText
         android:id="@+id/editTextTextPersonName4"
         android:layout_width="334dp"
-        android:layout_height="44dp"
+        android:layout_height="48dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="ENTER YOUR NAME HERE:"
@@ -38,7 +38,7 @@
     <Button
         android:id="@+id/btnGetName"
         android:layout_width="333dp"
-        android:layout_height="39dp"
+        android:layout_height="48dp"
         android:layout_marginTop="24dp"
         android:backgroundTint="@color/orange01"
         android:shadowColor="#F44336"
@@ -50,4 +50,40 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
         app:rippleColor="@color/black"
         app:strokeColor="#F44336" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="125dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option 1"
+            android:textColor="@color/orange01"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option 2"
+            android:textColor="@color/orange01"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option 3"
+            android:textColor="@color/orange01"
+            android:textSize="24sp" />
+    </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>

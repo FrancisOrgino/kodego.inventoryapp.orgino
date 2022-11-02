@@ -17,5 +17,13 @@ class TestActivity : AppCompatActivity() {
         binding.btnGetName.setOnClickListener(){
             Toast.makeText(applicationContext, "Hello World",Toast.LENGTH_LONG).show()
         }
+
+        binding.radioGroup.setOnCheckedChangeListener { radioGroup, checkedOption ->
+            when(checkedOption){
+            R.id.radioButton -> Toast.makeText(applicationContext,"option 1 selected", Toast.LENGTH_LONG).show()
+            R.id.radioButton2 -> Toast.makeText(applicationContext,"option 2 selected", Toast.LENGTH_LONG).show()
+            R.id.radioButton3 -> Toast.makeText(applicationContext,"option 3 selected",Toast.LENGTH_LONG).show()
+            }
+        }
     }
 }
